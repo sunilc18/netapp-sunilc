@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: docker login
       env:
-        $sunil: ${{ secrets.sunil}}
+        $sunil: ${{ secrets.sunil}}   
       run: |
         docker login -u $sunil
 
