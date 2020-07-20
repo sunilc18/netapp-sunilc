@@ -22,12 +22,12 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Docker build nodejs
-      run: |
-        docker build ./nodejs.aimvector/nodejs:1.0.0
+# Runs a single command using the runners shell
+    - name: Run a one-line script
+      run: echo Hello, world!
 
     # Runs a set of commands using the runners shell
-    - name: Docker build python
+    - name: Run a multi-line script
       run: |
-        docker build /python.aimvector/python:1.0.0
+        echo Add other actions to build,
+        echo test, and deploy your project.
